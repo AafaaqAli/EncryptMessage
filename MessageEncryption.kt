@@ -43,8 +43,7 @@ class MessageEncryption{
             }
         }   
         
-        fun decypt(val message: String, val secretKey: String){
-            : String? {
+        fun decypt(val message: String, val secretKey: String): String? {
     			Security.addProvider(BouncyCastleProvider())
    				 var keyBytes: ByteArray
 
